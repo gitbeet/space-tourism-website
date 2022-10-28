@@ -1,4 +1,5 @@
 .button-dot{
+    cursor: pointer;
     width: 11px;
     height: 11px;
     background-color: var(--clr-white);
@@ -21,6 +22,15 @@
 
 .crew-image{
     height:250px;
+    animation: crew-transition .8s ease-in
+
+}
+
+
+@keyframes crew-transition {   
+    0%{
+        filter: blur(15px);
+    }     
 }
 
 .crew-role{

@@ -1,5 +1,15 @@
+
+
 .planet-image{
-    width: 50%;
+    width: 40%;
+    animation: planet-transition .8s ease-in
+}
+
+
+@keyframes planet-transition {   
+    0%{
+        filter: blur(15px);
+    }     
 }
 
 .planet-name{
