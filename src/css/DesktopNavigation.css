@@ -1,0 +1,38 @@
+.desktop-navigation{
+    display: none;
+    gap: 40px;
+    background-color: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    margin-top: 0;
+    width: 50%;
+}
+
+.navigation-line{
+    display: none;
+}
+
+.nav-button-number{
+    display: none;
+}
+
+@media (min-width:768px) {
+
+    .desktop-navigation{
+        display: flex;
+    }
+
+    .navigation-line{
+        position: absolute;
+        left:10%;
+        background-color: rgba(255, 255, 255, 0.04);
+        height:2px;
+        width: 42%;
+    }
+}
+
+@media (min-width:1440px){
+    .nav-button-number{
+        display: inline;
+    }
+}

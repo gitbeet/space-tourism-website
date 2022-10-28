@@ -1,0 +1,85 @@
+.planet-image{
+    width: 50%;
+}
+
+.planet-name{
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+.planet-description{
+    line-height: 1.7;
+    padding-bottom: 30px;
+}
+
+.button + .button {
+    margin-left: 10px;
+}
+
+.destination-medium-text{
+    font-size: 28px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.destination-small-text{
+    font-size: 14px;
+    letter-spacing: 1.8px;
+}
+
+
+.planet-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media (min-width:768px) {
+    .planet-name{
+        font-size: 80px;
+        margin-top: 45px;
+    }  
+
+    .planet-description{
+        width: 55%;
+        padding-bottom: 60px;
+    }
+
+    .planet-tablet-footer{
+        display: flex;
+        gap: 90px;
+        margin-top: 10px;
+    }
+}
+
+
+
+@media (min-width:1440px){
+
+    .planet-name{
+        font-size: 100px;
+        margin-top: 45px;
+    } 
+  
+    .planet-image{  
+        min-width: 560px; 
+        max-width: 700px;
+        height: auto;
+        margin-left: 120px;
+    }
+
+    .planet-text{
+        width: 100%;
+        align-items: flex-start;
+        margin-left: 80px;
+        margin-bottom: 40px;
+    }  
+
+    .planet-description{
+        text-align: left;
+        width: 75%;
+    }
+}

@@ -1,0 +1,154 @@
+.button-circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: .7;
+    text-align: center;
+    border: 1px solid var(--clr-light);
+    color: var(--clr-light);
+    border-radius: 50%;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    transition: .1s ease-in-out;    
+}
+
+.button-circle + .button-circle{
+    margin-left: 10px;
+}
+
+.button-circle:hover{
+    opacity: 1;
+    cursor: pointer;
+    border-color: var(-clr-white);
+    color: var(--clr-white);
+}
+
+.button-circle-active{
+    opacity: 1;
+    background-color:var(--clr-white);
+    border-color: var(--clr-white);
+    color: var(--clr-dark);
+}
+
+.button-circle-active:hover{
+    color:var(--clr-dark) ;
+    background-color: var(--clr-white);
+}
+
+.technology-terminology{
+    margin-top: 40px;
+    margin-bottom: 0;
+    letter-spacing: 2px;
+    font-size: 18px;
+}
+
+.technology-name{
+    letter-spacing: 0;
+    font-size: 26px;
+    margin-bottom: 0;
+}
+
+.technology-description{
+    width: min(500px,75%);
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.technology-image-desktop{
+    display: none;
+}
+
+.technology-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.technology-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width:768px){
+    .technology-image{
+        width: 100%;
+    }
+
+    .button-circle{
+        margin-top: 40px;
+        font-size: 24px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .technology-name{
+        font-size: 40px;
+        margin-top:20px;
+    }
+
+    .technology-description{
+        width: min(70%,500px);
+        line-height: 1.8;
+    }
+
+    .technology-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (min-width:1440px){
+
+    .technology-image{
+        display: none;
+    }
+
+    .technology-image-desktop{
+        display: block;
+    }
+
+    .technology-container{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .button-circle-container{
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .button-circle{
+        width: 80px;
+        height: 80px;
+        font-size: 32px;
+    }
+
+    .technology-wrapper{
+        flex-direction: row;
+        gap: 60px;
+        margin-left: 140px;
+    }
+
+    .technology-text{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .technology-description{
+        text-align: left;
+    }
+
+    .technology-name{
+        font-size: 56px;
+    }
+}
+
+
+

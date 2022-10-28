@@ -1,0 +1,146 @@
+.button-dot{
+    width: 11px;
+    height: 11px;
+    background-color: var(--clr-white);
+    opacity: .3;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+.button-dot + .button-dot{
+    margin-left: 8px;
+}
+
+.button-dot:hover{
+    opacity: .7;
+}
+
+.button-dot-active{
+    opacity: 1;
+}
+
+.crew-image{
+    height:250px;
+}
+
+.crew-role{
+    font-size: 18px;
+    opacity:.5;
+    margin-top: 30px;
+}
+
+.crew-name{
+    letter-spacing: 0px;
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.crew-bio{
+    letter-spacing: 1px;
+}
+
+.image-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid  rgba(255,255,255,.2);  
+}
+
+.crew-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@media (min-width:768px){
+    .crew-container{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .crew-text{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .crew-image{
+        position: absolute;
+        bottom:0;
+        width: auto;
+        height: 48%;
+    }
+
+    .image-container{
+        border: none;
+    }
+
+    .crew-role{
+        margin-top: 0;
+        font-size: 24px;
+    }
+
+    .crew-name{
+        font-size: 40px;
+    }
+
+    .crew-bio{
+        margin: 0 auto;
+        text-align: center;
+        width: 75%;
+    }
+
+    .button-dot{
+        margin-top: 50px;
+    }
+}
+
+@media (min-width:1440px){
+    .crew-container{
+        flex-direction: row-reverse;
+        width: 100%;
+    }
+
+    .crew-image{
+        position: absolute;
+        bottom:0;
+        width: initial;
+        height: initial;
+    }
+
+    .crew-text{
+       align-items: flex-start;
+    }
+
+    .crew-info{
+        text-align: left;
+    }
+
+    .crew-bio{
+        font-size: 18px;
+        text-align: left;
+        margin-top: 50px;
+        margin-left: 0;
+    }
+
+    .crew-role{
+        font-size: 32px;
+    }
+
+    .crew-name{
+        margin-top: 24px;
+        font-size: 56px;
+    }
+
+    .button-dot{
+        margin-top: 150px;
+        height: 15px;
+        width: 15px;
+    }
+
+    .button-dot + .button-dot{
+        margin-left: 20px;
+    }
+}
